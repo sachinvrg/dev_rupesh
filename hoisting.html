@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Function & Variable Hoisting</h1>
+</head>
+<body>
+	<script>
+		
+		console.log("I am a "+ job);
+		var job = "web developer";
+		console.log("I am a "+ job);
+
+		function abc(){
+			console.log("I am a "+ job);
+			var job = "student";
+			console.log("I am a "+ );
+		}
+
+		abc();
+
+	</script>
+
+</body>
+</html>

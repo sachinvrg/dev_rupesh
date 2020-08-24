@@ -1,0 +1,32 @@
+<script>
+	const questions = (name) => {
+		if(name === "Ajay"){
+			return function(topic){
+				console.log(`Hii ${name}. what is ${topic}?. explain us`);
+				}
+		}
+
+		if(name === "Sumit"){
+			return function(topic){
+				console.log(`Hii ${name}. what is ${topic}?. explain us`);
+			}
+		}
+
+		if(name === "Ram"){
+			return function(topic){
+				console.log(`Hii ${name}. what is ${topic}?. explain us`);
+			}
+		}
+		else{
+		return function() {
+				console.log("In Interview")
+			}
+		}
+}
+
+	questions("Ajay")("Javascript");
+	questions("Sumit")("Reactjs");
+	questions("Ram")("Nodejs");
+
+
+</script>

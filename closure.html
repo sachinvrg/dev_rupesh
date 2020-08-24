@@ -1,0 +1,23 @@
+<script>
+	
+	const ques = (name) => {
+		return function(topic){
+			if(name === "Ankit"){
+				console.log(`Hii, ${name}. what is Javascript.`)
+			}
+			else if(name === "Ram"){
+				console.log(`Hii, ${name}. what is Reactjs.`)
+			}
+			else if(name === "Ajay"){
+				console.log(`Hii, ${name}. what is Nodejs.`)
+			}
+			else{
+				console.log("wlcm in company")
+			}
+		}
+	} 
+ 
+	ques("Ankit")("Javascript");
+	ques("Ram")("Reactjs");
+	ques("Ajay")("Nodejs");
+</script>

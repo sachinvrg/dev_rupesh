@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script> 
+function myfun() {
+	var a = document.getElementById("mobilenumber").value;
+	if(a==""){
+		document.getElementById("message").innerHTML="** Please fill Mobile Number"
+			return false;
+		}
+
+	if(isNaN(a)) {
+		document.getElementById("message").innerHTML="** Enter Only Number"
+			return false;
+		}
+
+	if(a.length<10){
+		documnet.getElementById("message").innerHTML="** Mobile Number must be 10 digit"
+		return false;
+		}
+
+
+
+}	
+</script>
+<h1 style="color:green; text-align: center;">Mobile Number Validation In JS</h1>
+<form onsubmit="return myfun()">
+	Mobile Number : <input type="text" id="number" value="">
+	<span id="message"></span>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>

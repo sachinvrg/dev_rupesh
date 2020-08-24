@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script> 
+	function myfun(){
+		
+		var correct_way = /^[A-Za-z]+$/;
+
+		var a = document.getElementById("User_Name").value;
+
+	if(a==""){
+		document.getElementById("Message").innerHTML="** Please fill UserName";
+			return false;
+		}
+		if(a.length<3) {
+			document.getElementById("Message").innerHTML="** UserName is Short";
+				return false;
+			}
+
+			if(a.length>10) {
+			document.getElementById("Message").innerHTML="** UserName is Too Long";
+				return false;
+			}
+
+			if(a==(correct_way)) //if (a.match(correct_way))
+				true;
+			else{
+				document.getElementById("Message").innerHTML=" ** Only Alphabets areallowed";
+				return false;
+			}
+
+	}
+	</script>
+	<form onsubmit="return myfun()">
+		UserName :
+		<input type="text" id="User_Name" value="">
+		<span id="Message"></span>
+		<br></br>
+		<input type="submit" value="Submit"></input>
+
+	</form>
+</body>
+</html>
