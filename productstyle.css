@@ -1,0 +1,108 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	width: 80vh;
+	margin-left: 70vh; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	margin-top: 20px;
+	height: 80vh;
+	width: 85vw;
+	background-color: grey;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card{
+	background-color: white;
+	width: 85%;
+	height: 80%;
+	border-radius: 8px;
+	display: flex;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+
+}
+
+.card .image,
+.card .infos {
+	width: 50%;
+}
+
+.infos .price {
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+}
+
+.infos .more-infos {
+	display: flex;
+	width: 30%;
+	justify-content: space-between;
+}
+
+.infos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	padding: 40px;
+}
+
+.buttons {
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons button {
+	width: 45%;
+	font: inherit;
+	border: 2px solid grey;
+	border-radius: 25px;
+	background-color: white;
+}
+
+.slider {
+	height: 80%;
+	display: flex;
+	align-items: center;
+}
+
+.slider img {
+	width: 90%;
+	margin: auto;
+}
+
+.img-slider {
+	display: flex;
+	height: 40px;
+	justify-content: space-between;
+	margin: auto;
+	width: 60%;
+}
+
+.img-slider div {
+	width: 20%;
+	height: 100%;
+}
+
+.img-slider img {
+	height: 100%;
+}
